@@ -31,7 +31,7 @@ pipeline {
         stage('Tests') {
             steps {
                 sh '''
-                    .venv/bin/pytest
+                    .venv/bin/pytest -v
                 '''
             }
         }
@@ -39,7 +39,6 @@ pipeline {
         stage('Quality Gate') {
             steps {
                 echo 'Quality Gate superado'
-                echo 'Ruff y Pytest han finalizado correctamente'
             }
         }
     }
