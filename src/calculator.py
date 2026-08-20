@@ -14,7 +14,8 @@ def subtract(a: float, b: float) -> float:
 def multiply(a: float, b: float) -> float:
     """Return the multiplication of two numbers."""
     return a * b
-
 def divide(a, b):
     if b == 0:
-        return 0
+        raise ValueError("Division by zero")
+
+    return a / b
