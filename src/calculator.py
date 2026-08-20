@@ -23,6 +23,5 @@ def divide(a: float, b: float) -> float:
         ValueError: If b is zero.
     """
     if b == 0:
-        raise ValueError("Division by zero")
 
-    return a / b
+        return 0
