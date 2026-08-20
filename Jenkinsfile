@@ -1,5 +1,4 @@
 pipeline {
-
     agent any
 
     stages {
@@ -36,16 +35,22 @@ pipeline {
                 '''
             }
         }
+
+        stage('Quality Gate') {
+            steps {
+                echo 'Quality Gate superado'
+                echo 'Ruff y Pytest han finalizado correctamente'
+            }
+        }
     }
 
     post {
-
         success {
             echo 'CI finalizado correctamente'
         }
 
         failure {
-            echo 'CI ERROR: revisar los logs del pipeline'
+            echo 'CI FALLIDO - revisar errores'
         }
 
         always {
