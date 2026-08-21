@@ -22,6 +22,6 @@ def divide(a: float, b: float) -> float:
         ValueError: If b is zero.
     """
     if b == 0:
-        raise ValueError("Cannot divide by zero")
-
+        # ERROR DOCENTE: Este mensaje no coincide con el test unitario
+        raise ValueError("Error al dividir") 
     return a / b
