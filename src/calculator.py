@@ -15,7 +15,6 @@ def multiply(a: float, b: float) -> float:
     """Return the multiplication of two numbers."""
     return a * b
 
-# src/calculator.py
 def divide(a: float, b: float) -> float:
     """Return the division of two numbers.
 
