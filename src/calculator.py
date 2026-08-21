@@ -17,7 +17,11 @@ def multiply(a: float, b: float) -> float:
 
 # src/calculator.py
 def divide(a: float, b: float) -> float:
-    """Calcula la división de dos números."""
+    """Return the division of two numbers.
+
+    Raises:
+        ValueError: If b is zero.
+    """
     if b == 0:
         # ERROR DOCENTE: Este mensaje no coincide con el test unitario
         raise ValueError("Error al dividir") 
