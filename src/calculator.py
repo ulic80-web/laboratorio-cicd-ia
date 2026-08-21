@@ -15,7 +15,6 @@ def multiply(a: float, b: float) -> float:
     """Return the multiplication of two numbers."""
     return a * b
 
-
 def divide(a: float, b: float) -> float:
     """Return the division of two numbers.
 
@@ -23,5 +22,6 @@ def divide(a: float, b: float) -> float:
         ValueError: If b is zero.
     """
     if b == 0:
+        raise ValueError("Cannot divide by zero")
 
-        return 0
+    return a / b
