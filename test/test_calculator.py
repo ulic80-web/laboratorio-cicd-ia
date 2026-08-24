@@ -1,7 +1,6 @@
 """Tests for calculator module."""
 
 import pytest
-
 from src.calculator import add, divide, multiply, subtract
 
 
@@ -22,5 +21,6 @@ def test_divide_two_numbers():
 
 
 def test_division_by_zero():
+    # Copilot leerá este 'match' y lo comparará contra src/calculator.py
     with pytest.raises(ValueError, match="Division by zero"):
         divide(10, 0)

@@ -15,6 +15,7 @@ def multiply(a: float, b: float) -> float:
     """Return the multiplication of two numbers."""
     return a * b
 
+
 def divide(a: float, b: float) -> float:
     """Return the division of two numbers.
 
@@ -22,6 +23,5 @@ def divide(a: float, b: float) -> float:
         ValueError: If b is zero.
     """
     if b == 0:
-        # ERROR DOCENTE: Este mensaje no coincide con el test unitario
         raise ValueError("Division by zero")
     return a / b
