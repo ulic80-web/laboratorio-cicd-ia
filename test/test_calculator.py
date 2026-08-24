@@ -2,7 +2,7 @@
 
 import pytest
 
-from src.calculator import add, divide, multiply, subtract
+from src.calculator import add, divide, multiply, power, subtract
 
 
 def test_add_two_numbers():
@@ -22,9 +22,9 @@ def test_divide_two_numbers():
 
 
 def test_division_by_zero():
-    # Copilot leerá este 'match' y lo comparará contra src/calculator.py
     with pytest.raises(ValueError, match="Division by zero"):
         divide(10, 0)
-from src.calculator import add, divide, multiply, subtract, power
+
+
 def test_power():
     assert power(2, 3) == 8
