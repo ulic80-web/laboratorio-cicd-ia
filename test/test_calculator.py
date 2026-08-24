@@ -1,6 +1,7 @@
 """Tests for calculator module."""
 
 import pytest
+
 from src.calculator import add, divide, multiply, subtract
 
 
