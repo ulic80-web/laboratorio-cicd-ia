@@ -1,0 +1,17 @@
+[project]
+name = "laboratorio-cicd-ia"
+version = "0.2.0"
+description = "Laboratorio práctico de CI/CD con una calculadora en Python"
+readme = "README.md"
+requires-python = ">=3.10"
+
+[tool.pytest.ini_options]
+testpaths = ["test"]
+pythonpath = ["."]
+
+[tool.ruff]
+line-length = 88
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP"]
